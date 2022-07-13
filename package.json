@@ -1,0 +1,23 @@
+{
+  "name": "futurebridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "frontend": "npm start --prefix front",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "Priyajit",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
+  }
+}
